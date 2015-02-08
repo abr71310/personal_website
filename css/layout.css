@@ -16,6 +16,28 @@
 /* ------------------------------------------------------------------ */
 body { background: #0f0f0f; }
 
+/* general section link */
+#resume-scroll a {
+	position: absolute;
+	bottom: -975px;
+	left: 50%;
+	margin-left: -29px;
+	color: #fff;
+	display: block;
+	height: 42px;
+	width: 42px;
+	line-height: 42px;
+	font-size: 42px;
+	color: #fff;
+	border-radius: 100%;
+
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+#resume-scroll a:hover { color: #11BBBB; }
+
 /* ------------------------------------------------------------------ */
 /* b. Header Styles
 /* ------------------------------------------------------------------ */
@@ -25,11 +47,12 @@ header {
 	min-height: 500px;
 	width: 100%;
 	height: 800px;
+	text-align: center;
+	overflow: hidden;
 	background: #161415 url(../images/header-background.jpg) no-repeat top center;
 	background-size: cover !important;
 	-webkit-background-size: cover !important;
-	text-align: center;
-	overflow: hidden;
+	-webkit-linear-gradient(top, rgba(255,255,255,0.0), rgba(0,0,0,0.2)),url(../images/header-background.jpg); 
 }
 
 /* vertically center banner section */
@@ -39,33 +62,44 @@ header:before {
 	vertical-align: middle;
 	height: 100%;
 }
+
+/*header #overlay-background {
+	background-color: #000;
+	opacity: 0.2;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+}/* Tried a background gradient... didn't work*/
+
 header .banner {
 	display: inline-block;
 	vertical-align: middle;
 	margin: 0 auto;
 	width: 85%;
-	padding-bottom: 30px;s
+	padding-bottom: 30px;
 	text-align: center;
 }
 
 header .banner-text { width: 100%; }
 header .banner-text h1 {
 	font: 90px/1.1em 'opensans-bold', sans-serif;
-	color: #18d;
+	color: #4222F5;
 	letter-spacing: -2px;
-	margin: 0 auto 18px auto;
+	margin: -45px auto 10px auto;
 	text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
 }
 header .banner-text h3 {
-	font: 18px/1.9em 'librebaskerville-regular', serif;
-	color: #3322FF;
+	font: 18px/1.9em 'opensans-regular', serif;
+	color: #36354A;
 	margin: 0 auto;
 	width: 75%;
-	text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+	text-shadow: 2px 2px 2px #EBEBF2;
 }
 header .banner-text h3 span,
 header .banner-text h3 a {
-	color: #0DF;
+	color: #52A8FF;
+	text-shadow: 1px 1px 1px #EBEBF2;
 }
 header .banner-text hr {
 	width: 70%;
@@ -87,7 +121,7 @@ header .social li {
 	padding: 0;
 }
 header .social li a { color: #fff; }
-header .social li a:hover { color: #11ABB0; }
+header .social li a:hover { color: #11BBBB; }
 
 /* scrolldown link */
 header .scrolldown a {
@@ -109,7 +143,7 @@ header .scrolldown a {
 	-o-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
 }
-header .scrolldown a:hover { color: #11ABB0; }
+header .scrolldown a:hover { color: #11BBBB; }
 
 /* primary navigation
 --------------------------------------------------------------------- */
@@ -132,7 +166,13 @@ header .scrolldown a:hover { color: #11ABB0; }
 	left: 0;
 	top: 0;
 }
-.opaque { background-color: #333; }
+.opaque { 
+	background-color: #333;
+}
+
+#nav-wrap:not(.opaque) {
+	background-color: #fff;
+} /**/
 
 /* hide toggle button */
 #nav-wrap > a.mobile-btn { display: none; }
@@ -185,7 +225,7 @@ ul#nav li.current a { color: #F06000; }
 }
 
 #about a, #about a:visited  { color: #fff; }
-#about a:hover, #about a:focus { color: #11ABB0; }
+#about a:hover, #about a:focus { color: #11BBBB; }
 
 #about h2 {
 	font: 22px/30px 'opensans-bold', sans-serif;
@@ -258,7 +298,7 @@ ul#nav li.current a { color: #F06000; }
 	border-bottom: 1px solid #E8E8E8;
 }
 #resume .info {
-	font: 16px/24px 'librebaskerville-italic', serif;
+	font: 16px/24px 'opensans-italic', serif;
 	color: #6E7881;
 	margin-bottom: 18px;
 	margin-top: 9px;
@@ -357,7 +397,7 @@ ul#nav li.current a { color: #F06000; }
   	-webkit-animation: jquery 2s ease;
 }
 .rubiks {
-  	width: 100%;
+  	width: 99%;
   	-moz-animation: rubiks 2s ease;
   	-webkit-animation: rubiks 2s ease;
 }
@@ -396,7 +436,7 @@ ul#nav li.current a { color: #F06000; }
 }
 @-moz-keyframes rubiks {
   0%   { width: 0px;  }
-  100% { width: 100%;  }
+  100% { width: 99%;  }
 }
 
 @-webkit-keyframes javascript {
@@ -433,7 +473,7 @@ ul#nav li.current a { color: #F06000; }
 }
 @-webkit-keyframes rubiks {
   0%   { width: 0px;  }
-  100% { width: 100%;  }
+  100% { width: 99%;  }
 }
 
 /* ------------------------------------------------------------------ */
@@ -610,7 +650,7 @@ ul#nav li.current a { color: #F06000; }
 
 #quotes {
 	position: relative;
-	min-height: 200px;
+	min-height: 475px;
 	width: 100%;
 	overflow: hidden;
 	background: #1F1F1F url(../images/quotes-bg.jpg) no-repeat center center;
@@ -650,7 +690,7 @@ ul#nav li.current a { color: #F06000; }
 }
 #quotes blockquote:before { content: none; }
 #quotes blockquote p {
-	font-family: 'librebaskerville-italic', serif;
+	font-family: "Palatino Linotype", Palatino, serif;
 	padding: 0;
 	font-size: 24px;
 	line-height: 48px;
@@ -970,5 +1010,5 @@ footer .social-links li:first-child { margin-left: 0; }
 	border-radius: 100%;
 }
 
-#go-top a:hover { background-color: #0F9095; }
+#go-top a:hover { background-color: #11BBBB; }
 

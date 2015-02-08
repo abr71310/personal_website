@@ -39,11 +39,13 @@
 		</nav> <!-- end #nav-wrap -->
 
 		<div class="row banner">
+			<!-- <div id="overlay-background"></div> <!-- Maybe if gradients come back into style... -->
 			<div class="banner-text">
-				<h1 class="responsive-headline">Hi! I'm Michael Shao.</h1>
+				<h1 class="responsive-headline">Michael Shao</h1>
 				<h3>I'm a <span>software engineer</span>, <span>product manager</span>, <span>entrepreneur</span>, <span>technologist</span> and <span>gamer</span>.
-				I'm all about creating insightful and impactful experiences for people around the world. Click any of the icons below to check out my online presence.
-				If you <a class="smoothscroll" href="#about">start scrolling</a>, you can learn more <a class="smoothscroll" href="#about">about me</a>!
+				I'm all about solving user frustration, as well as creating insightful and impactful experiences for people around the world.
+				Click any of the icons below to find me online.<br>
+				Feel free to learn more <a class="smoothscroll" href="#about">about me</a>.
 				</h3>
 				<hr />
 				<ul class="social">
@@ -52,7 +54,7 @@
 					<li><a href="http://instagram.com/abr71310"><i class="fa fa-instagram"></i></a></li>
 					<li><a href="http://ca.linkedin.com/in/mshao"><i class="fa fa-linkedin-square"></i></a></li>
 					<li><a href="http://github.com/abr71310"><i class="fa fa-github-square"></i></a></li>
-					<li><a href="http://reddit.com/u/abr71310"><i class="fa fa-reddit-square"></i></a></li>
+					<li><a href="http://reddit.com/u/riotshao"><i class="fa fa-reddit-square"></i></a></li>
 					<li><a href="http://mshao.yelp.ca"><i class="fa fa-yelp"></i></a></li>
 					<li><a href="http://chairmanshao.wordpress.com"><i class="fa fa-wordpress"></i></a></li>
 					<li><a href="http://www.youtube.com/user/chairmanshao"><i class="fa fa-youtube-play"></i></a></li>
@@ -63,7 +65,7 @@
 		</div>
 
 		<p class="scrolldown">
-			<a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+			<a class="smoothscroll" href="#about" title="About Me"><i class="icon-down-circle"></i></a>
 		</p>
 	</header> <!-- Header End -->
 	
@@ -74,15 +76,19 @@
 				<img class="profile-pic"  src="images/profilepic.jpg" alt="" />
 			</div>
 			<div class="nine columns main-col">
-				<h2>About Me</h2>
+				<h2>About</h2>
 				<p>
 					I graduated from the <a href='http://uwaterloo.ca'>University of Waterloo</a> in December of 2014 with an <b>Honours Bachelor of Computer Science Co-op</b>, with a <b>History Minor</b>.
 					I've worked at six different companies in six different industries, in a variety of roles. I've been a <u>software automation developer</u>, a <u>software development engineer in test</u>, 
-					a <u>software engineer</u>, a <u>product manager</u>, and a <u>web developer</u>. I am an alumnus of the <a href='http://velocity.uwaterloo.ca/'><u>VeloCity</u></a> residence incubator (at <a href='http://twitter.com/uwaterloo'>UWaterloo</a>), where I lived during study
-					and work terms spanning from August 2011 and December 2013. While I lived there, I worked on building my own startup, as well as advising and working with others on theirs. 
-					I am passionate about <b><u>solving user frustration</u></b>, on a small scale for personal projects, and on a large scale in a workplace environment. My belief: the <u>best possible feedback</u> comes through <b>data</b>;
-					regardless of what users or developers believe, at the end of the day, <u><b>data</b></u> is the single deciding factor in making product decisions. By the way, the pictures on this page are
-					mine! -- The main photo is from Lake Minnewanka near Banff, and the Quotes background photo was taken when looking down on Moraine Lake (in Banff National Park). 
+					a <u>software engineer</u>, a <u>product manager</u>, and a <u>web developer</u>. As an alumni of the <a href='http://velocity.uwaterloo.ca/'><u>VeloCity</u></a> residence incubator program (at <a href='http://twitter.com/uwaterloo'>UWaterloo</a>) between August 2011 and December 2013, I built an awesome product, while helping others achieve their successes in other projects as well. 
+					I am passionate about <b><u>solving user frustration</u></b>, on a small scale for personal projects, and on a large scale in a workplace environment. My belief: the <u>best possible feedback</u> comes through <b><u>data</u></b>;
+					regardless of what users or developers believe, at the end of the day, <u><b>data</b></u> is the single deciding factor in making product decisions. By the way, I took the photos at the top of the page, as well as in the quotes section. The main photo is a view of Lake Minnewanka near Banff, and the Quotes background photo is Moraine Lake (in Banff National Park).<br>
+				</p>
+				<h2>Extra</h2>
+				<p>
+					I do sports &amp; other things on the side, too! Rock climbing (bouldering/top-roping), Badminton, Tennis, Ice/Ball Hockey, Ping Pong, Baseball and American Football, just to name a few! 
+					<br>
+					Random sidenote: I've been on TV before, specifically <a href="http://www.pbs.org/newshour/bb/rubiks-cubes-mystique-remains-40-years-later/">PBS Newshour</a>. As you can tell, I love <a href="https://www.worldcubeassociation.org/results/p.php?i=2009SHAO02">cubing</a>.
 				</p>
 				<div class="row">
 					<div class="columns contact-details">
@@ -108,6 +114,11 @@
 				</div> <!-- end row -->
 			</div> <!-- end .main-col -->
 		</div>
+		<p id="resume-scroll" class="scrolldown">
+			<a class="smoothscroll" href="#resume" title="Resume">
+				<i class="icon-down-circle"></i>
+			</a>
+		</p>
 	</section> <!-- About Section End-->
 
 	<!-- Resume Section ================================================== -->
@@ -123,8 +134,7 @@
 						<h3>University of Waterloo</h3>
 						<p class="info">Honours Bachelor of Computer Science<span>&bull;</span> <em class="date">September 2009 &raquo; December 2014</em></p>
 						<p>
-							I studied <b><u>Computer Science</u></b> at the <a href="http://uwaterloo">University of Waterloo</a>; I was a <b><i>History Minor</i></b>, 
-							and also was a candidate for the Software Engineering Option. Course offerings of the final two classes being off-stream from me required made achieving this option impossible. 
+							I studied <b>Computer Science</b> at the <a href="http://uwaterloo">University of Waterloo</a>; I also graduated with a <b>History Minor</b>.
 							Relevant courses: CS349 (User Interfaces), CS370 (Numerical Computation), CS445 (Software Requirements: Specification &amp; Analysis),
 							CS458 (Computer Security & Privacy), CS456 (Computer Networks).
 						</p>
@@ -153,10 +163,7 @@
 						<h3>Riot Games</h3>
 						<p class="info">Software Engineering Intern<span>&bull;</span> <em class="date">May 2014 &raquo; August 2014</em></p>
 						<p>
-							Riot Games is the maker of League of Legends, a game of the Multiplayer Online Battle Arena (MOBA) 
-							genre. I worked in the back­end web space, rebuilding signup API to allow developers to create custom
-							experiences for new users signing up for the game. I also designed and led a side project during the 
-							semi­annual Riot hackathon that created "Co­op vs AI: Draft Mode" in a Node.js application.
+							Riot Games is the maker of League of Legends, a game of the Multiplayer Online Battle Arena (MOBA) genre. I worked in the back­end web space, rebuilding the signup API to allow developers to create custom experiences for new users as they signed up for the game. I also designed and led a side project during the semi­annual Riot hackathon. 
 						</p>
 					</div>
 				</div> <!-- end work experience #1 -->
@@ -165,9 +172,7 @@
 						<h3>Audible (a subsidiary of Amazon)</h3>
 						<p class="info">Software Development Engineer in Test (SDET) Intern<span>&bull;</span> <em class="date">January 2014 &raquo; April 2014</em></p>
 						<p>
-							Implemented and maintained a full­-featured automation suite for Kindle's Audible plugin for immersion 
-							reading using Java. Drove the design and planning phase of an internal developer tool meant for tracking third-party 
-							devices.
+							Implemented and maintained a full­-featured automation suite for Kindle's Audible plugin for immersion reading using Java. Drove the design and planning phase of an internal developer tool meant for tracking third-party devices.
 						</p>
 					</div>
 				</div> <!-- end work experience #2 -->
@@ -176,10 +181,7 @@
 						<h3>shoptimize</h3>
 						<p class="info">Co-founder, Product Manager<span>&bull;</span> <em class="date">May 2012 &raquo; August 2013</em></p>
 						<p>
-							Shoptimize was a mobile application meant to comprehensively optimize your grocery shopping
-							experience­ through information, convenience, and time efficiency. Validated market through grocers and
-							shoppers alike, to find the user frustration in the grocery industry. Communicated product beta communications, 
-							public relations, and marketing philosophies; managed business vision and product design.
+							Shoptimize was a mobile application meant to comprehensively optimize your grocery shopping experience­ through information, convenience, and time efficiency. My specific role was to find the user frustration in the grocery industry, by validating the market problem through grocers and shoppers alike. I also communicated product beta communications, public relations, and marketing philosophies through social media and at events. On the software side, I managed both the overall business vision and product design.
 						</p>
 					</div>
 				</div> <!-- end work experience #3 -->
@@ -188,11 +190,7 @@
 						<h3>Datalot</h3>
 						<p class="info">Software Engineering Intern<span>&bull;</span> <em class="date">January 2013 &raquo; April 2013</em></p>
 						<p>
-							Implemented "Preview Action" of a window modal that dynamically populates dummy values from a
-							back­end using POST/GET requests. Fixed stylings of modals for current actions on event monitor 
-							windows. Developed IVR menu feature for calling agents to manage control flow of incoming calls; 
-							designed and created an in­window modal that followed agent while scrolling through page. Created 
-							and launched initial documentation efforts to connect and engage technical development with business development.
+							I built "Preview Action" of a window modal that dynamically populates dummy values from a back­end using POST/GET requests.  Also, I developed IVR menu feature for calling agents to manage control flow of incoming calls, and designed and created an in-­window modal that followed user while scrolling through page. My role also included maintenance - I fixed stylings of modals for current actions on event monitor windows. Lastly, I created and launched initial documentation efforts to connect and engage technical development with business development.
 						</p>
 					</div>
 				</div> <!-- end work experience #4 -->
@@ -201,10 +199,7 @@
 						<h3>Blue Coat Systems</h3>
 						<p class="info">Software Test Automation Engineer Intern<span>&bull;</span><em class="date">May 2011 &raquo; April 2012</em></p>
 						<p>
-							Developed and maintained automation testing software for finding product bugs and errors in operating 
-							production code. Re­wrote units based on coverage requirements and the expansion of support available 
-							for older versions. Refined analysis and scope of test suites to better represent stability control and unit 
-							coverage. Resolved and verified feature requests and bugs under strict deadlines and constraints.
+							I did two co-op terms here. My main roles were developing and maintaining automation testing software for finding product bugs and errors in operating production code using proprietary software operating systems. I spent most of my time re­writing test units based on coverage requirements and expanding the coverage support for older versions. I was also responsible for refining the analysis and scope of test suites to better represent stability control and unit coverage. Lastly, I was involved in resolving and verifying feature requests and bugs under strict deadlines and constraints from multiple product teams.
 						</p>
 					</div>
 				</div> <!-- end work experience #5 -->
@@ -213,18 +208,14 @@
 						<h3>AGF Management Ltd.</h3>
 						<p class="info">PC Support Analyst Intern<span>&bull;</span><em class="date">April 2010 &raquo; August 2010</em></p>
 						<p>
-							Implemented and sustained business continuity strategy for G20 Summit migration to external office (65 
-							employees). Tested and reported on various hardware specifications for user requirements. Drafted and 
-							maintained training material for new hires (co­op and full­time). Assisted in problem resolution and 
-							early deployment of Windows 7 desktop migration project (pilot included 250 people).
+							I got an outstanding employer evaluation for the work I did here. My flagship role was implementing and sustaining business continuity strategy for G20 Summit migration to external office (65 employees). I also had a role in the early deployment of Windows 7 desktop migration project (pilot included 250 people) across two offices. Other day-to-day tasks including testing and reporting on various hardware specifications for user requirements, as well as assisting and verifying resolutions for various user-defined problems. Nearing the end of my term, I took the lead in drafting and maintaining training material for new hires in both co-op and full-time positions within the IT department.
 						</p>
 					</div>
 				</div> <!-- end work experience #6 -->
 			</div> <!-- main-col end -->
 		</div> <!-- End Work -->
 
-		<!-- Skills
-		----------------------------------------------- -->
+		<!-- Skills ----------------------------------------------- -->
 		<div class="row skill">
 			<div class="three columns header-col">
 				<h1><span>Skills</span></h1>
@@ -232,14 +223,13 @@
 
 			<div class="nine columns main-col">
 				<p>
-					I have experience with the following version control systems: Mercurial, Git, Perforce, SVN.<br>
-					I am a seasoned developer in the Windows (XP/7), Mac OS (X), and Linux (Ubuntu, RHEL).<br>
-					I'm also trying my hand at photography (notice the landscape pictures!), music production, and video editing!<br>
-					I've been on TV before, specifically <a href="http://www.pbs.org/newshour/bb/rubiks-cubes-mystique-remains-40-years-later/">PBS Newshour</a>!
+					Version control systems: Mercurial, Git, Perforce, SVN.<br>
+					Environments: Windows (XP/7), Mac OS (X), and Linux (Ubuntu, RHEL).<br>
+					Extraneous skills: photography, music production, video editing.<br>
 				</p>
 				<p>
-					As you can tell from this website, I like developing things. Here's a list of a few of the things I have experience with.
-					While not comprehensive, it's also a list of things I want to learn; think of it as a progression tracker as well!
+					Here's a brief list of things I have experience with.<br>
+					While not comprehensive, think of it as an "in-progess" learning tracker.
 				</p>
 				<div class="bars">
 					<ul class="skills">
@@ -256,10 +246,9 @@
 				</div><!-- end skill-bars -->
 			</div> <!-- main-col end -->
 		</div> <!-- End skills -->
-	</section> <!-- Resume Section End-->
+	</section> <!-- Resume/Skills Section End-->
 
-   <!-- Social Section
-   ================================================== -->
+   <!-- Quotes Section ================================================== -->
    <section id="quotes">
       <div class="text-container">
          <div class="row">
@@ -339,17 +328,14 @@
        </div>  <!-- text-container ends -->
    </section> <!-- Testimonials Section End-->
 
-   <!-- Contact Section
-   ================================================== -->
+   <!-- Contact Section ================================================== -->
 	<section id="contact">
 		<div class="row section-head">
 			<div class="two columns header-col">
 				<h1><span>Get In Touch.</span></h1>
 			</div>
 			<div class="ten columns">
-				<p class="lead">Fill out this form if you would like to get in touch; it'll put a message in my inbox.<br> 
-				Assuming I'm not crazy busy, I should respond within a business day or two, if not sooner!<br>
-				Remember to make sure that the reply-to e-mail address is correct, otherwise I can't respond. :(
+				<p class="lead">Fill out this form if you would like to get in touch; standard response time is ~24 hours.<br>
 				</p>
 			</div>
 		</div>
@@ -383,7 +369,7 @@
 					</fieldset>
 				</form> <!-- Form End -->
 			<!-- contact-warning -->
-			<div id="message-warning"> Error boy</div>
+			<div id="message-warning">ERROR</div>
 				<!-- contact-success -->
 				<div id="message-success">
 				<i class="fa fa-check"></i>Your message was sent, thank you for reaching out!<br>
@@ -393,14 +379,14 @@
 				<div class="widget widget_contact">
 					<h4>Other Information</h4>
 					<p class="address">
-						<a href="http://michaelshao.com/resume.pdf" download>Primary Resume</a><br>
-						<a href="http://michaelshao.com/resume1.pdf" download>Secondary Resume</a><br>
+						<a href="http://michaelshao.com/resume.pdf" title="SDE Resume" download>SDE Resume</a><br>
+						<a href="http://michaelshao.com/resume1.pdf" title="Minimalist Resume" download>Minimalist Resume</a><br>
 						<a href="tel:+13476996049">347-699-6049</a><br>
 						<a href="mailto:mshshao@gmail.com">mshshao@gmail.com</a><br>
 					</p>
 				</div>
 				<div class="widget widget_tweets">
-					<h4 class="widget-title">Tweets by Me</h4>
+					<h4 class="widget-title">Tweets</h4>
 					<ul id="twitter">
 						<li>
 							<span>
@@ -423,7 +409,7 @@
                <li><a href="http://instagram.com/abr71310"><i class="fa fa-instagram"></i></a></li>
                <li><a href="http://ca.linkedin.com/in/mshao"><i class="fa fa-linkedin"></i></a></li>
                <li><a href="http://github.com/abr71310"><i class="fa fa-github"></i></a></li>
-               <li><a href="http://reddit.com/u/abr71310"><i class="fa fa-reddit"></i></a></li>
+               <li><a href="http://reddit.com/u/riotshao"><i class="fa fa-reddit"></i></a></li>
                <li><a href="http://mshao.yelp.ca"><i class="fa fa-yelp"></i></a></li>
                <li><a href="http://chairmanshao.wordpress.com"><i class="fa fa-wordpress"></i></a></li>
                <li><a href="http://www.youtube.com/user/chairmanshao"><i class="fa fa-youtube-square"></i></a></li>
