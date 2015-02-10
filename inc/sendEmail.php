@@ -32,7 +32,7 @@ if($_POST) {
 	} else {
 		$testemail = test_input($email);
 		if (!preg_match('/^[a-z0-9&\'\.\-_\+]+@[a-z0-9\-]+\.([a-z0-9\-]+\.)*+[a-z]{2}/is', $testemail)) {
-			$error['email'] = "Please enter a valid email address. (format: '<email>@<domain>)'";
+			$error['email'] = "Please enter a valid email address. (format: '(someemail)@(domain)')";
 		}
 	}
 	// Check Message
