@@ -122,6 +122,9 @@ header .social li {
 }
 header .social li a { color: #fff; }
 header .social li a:hover { color: #11BBBB; }
+header .social li a .quora {
+	font-size: 30px;
+}
 
 /* scrolldown link */
 header .scrolldown a {
