@@ -1,5 +1,5 @@
 ﻿<?php
-
+require_once "recaptchalib.php";
 $siteOwnersEmail = 'me@michaelshao.com';
 
 function test_input($data)
@@ -15,7 +15,12 @@ if($_POST) {
 	$email = $_POST['contactEmail'];
 	$subject = trim(stripslashes($_POST['contactSubject']));
 	$contact_message = $_POST['contactMessage'];
-
+	$gRecaptchaResponse = $_POST['g-recaptcha-response'];
+	$secret = '6Lfwgv4SAAAAAJ0tv1DbNrWm65KoWv3uSoyhwsfp';
+	$resp = null;
+	//$reCaptcha = new \ReCaptcha\ReCaptcha($secret);
+	$reCaptcha = new ReCaptcha($secret);
+	
 	// PHP Form Validations
 	// Name check 
 	if (empty($name)) {
@@ -44,6 +49,20 @@ if($_POST) {
 			$error['message'] = "Please enter your message. It should have at minimum 50 characters.";
 		}
 	}
+	
+	// Check reCaptcha
+	if (empty($gRecaptchaResponse)) {
+		$error['recaptcha'] = "Please verify ReCaptcha. It must be verified before an e-mail can be sent.";
+	} else { 
+		$resp = $reCaptcha->verify($gRecaptchaResponse, $_SERVER['REMOTE_ADDR']);
+		if (strlen($resp) > 0 && $resp->isSuccess()) {
+			// reCaptcha verified!
+		} else {
+			$error['recaptcha'] = "Recaptcha failed. Please try again.";
+			//$resp->getErrorCodes();
+		}
+	}
+	
 	// Subject
 	if ($subject == '') { $subject = "'Contact Me' Form Submission"; }
 	// Message Parameters
@@ -73,6 +92,7 @@ if($_POST) {
 		$response = (isset($error['name'])) ? $error['name'] . "<br /> \n" : null;
 		$response .= (isset($error['email'])) ? $error['email'] . "<br /> \n" : null;
 		$response .= (isset($error['message'])) ? $error['message'] . "<br />" : null;	
+		$response .= (isset($error['recaptcha'])) ? $error['recaptcha'] . "<br />" : null;	
 		echo $response;
 	}
 }

@@ -242,7 +242,7 @@ ul#nav li.current a { color: #F06000; }
 #about .profile-pic {
 	position: relative;
 	width: 120px;
-	height: 120px;
+	height: 137px;
 	border-radius: 100%;
 }
 #about .contact-details { width: 41.66667%; }
@@ -370,7 +370,7 @@ ul#nav li.current a { color: #F06000; }
   	-webkit-animation: node 2s ease;
 }
 .java {
-  	width: 70%;
+  	width: 90%;
   	-moz-animation: java 2s ease;
   	-webkit-animation: java 2s ease;
 }
@@ -888,6 +888,9 @@ ul#nav li.current a { color: #F06000; }
 #contact span.required {
 	color: #11ABB0;
 	font-size: 13px;
+}
+#contact .g-recaptcha {
+	margin-left: 26%;
 }
 #message-warning, #message-success {
 	display: none;
