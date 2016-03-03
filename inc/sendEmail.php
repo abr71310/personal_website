@@ -1,5 +1,5 @@
 ﻿<?php
-require_once "recaptchalib.php";
+require_once('recaptchalib.php');
 $siteOwnersEmail = 'me@michaelshao.com';
 
 function test_input($data)
@@ -18,7 +18,6 @@ if($_POST) {
 	$gRecaptchaResponse = $_POST['g-recaptcha-response'];
 	$secret = '6Lfwgv4SAAAAAJ0tv1DbNrWm65KoWv3uSoyhwsfp';
 	$resp = null;
-	//$reCaptcha = new \ReCaptcha\ReCaptcha($secret);
 	$reCaptcha = new ReCaptcha($secret);
 	
 	// PHP Form Validations
@@ -54,12 +53,11 @@ if($_POST) {
 	if (empty($gRecaptchaResponse)) {
 		$error['recaptcha'] = "Please verify ReCaptcha. It must be verified before an e-mail can be sent.";
 	} else { 
-		$resp = $reCaptcha->verify($gRecaptchaResponse, $_SERVER['REMOTE_ADDR']);
-		if (strlen($resp) > 0 && $resp->isSuccess()) {
+		$resp = $reCaptcha->verifyResponse($_SERVER['REMOTE_ADDR'], $gRecaptchaResponse);
+		if (!empty($resp) && $resp->success) {
 			// reCaptcha verified!
 		} else {
-			$error['recaptcha'] = "Recaptcha failed. Please try again.";
-			//$resp->getErrorCodes();
+			$error['recaptcha'] = $resp->errorCodes;
 		}
 	}
 	
