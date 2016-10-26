@@ -61,15 +61,16 @@ jQuery(document).ready(function($) {
  * ---------------------------------------------------*/
    $(window).on('scroll', function() {
 		var h = $('header').height();
+		var r = $('#resume').height();
 		var y = $(window).scrollTop();
 		var nav = $('#nav-wrap');
-		if ( (y > h*.20) && (y < h) && ($(window).outerWidth() > 768 ) ) {
+		if ( ((y > h*.20) && (y < h) && ($(window).outerWidth() > 768 )) || ((y > r*.20) && (y < r) && ($(window).outerWidth() > 1024 ))) {
 			nav.fadeOut('fast');
 		} else {
-			if (y < h*.20) {
+			if (y < h*.20 || (y < r*.20)) {
 				nav.removeClass('opaque').fadeIn('fast');
 			} else {
-			nav.addClass('opaque').fadeIn('fast');
+				nav.addClass('opaque').fadeIn('fast');
 			}
 		}
 	});
