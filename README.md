@@ -19,19 +19,27 @@ This is the README to my personal website that I regularly maintain for the mome
 * Aggregate Feed Update
 
 ##Even farther out:
-* Create a Gallery!
-* Have lots of images for the Gallery!
+* Create a Gallery! (kinda done?)
+* Have lots of images for the Gallery! (need a better quality camera...)
 * Probably create another slider-type-flex thing underneath the "quotes" section!
  * I know this is a "thing" already, but it's currently not "great" (at least not the way I envisioned a better one to look), but it's "good enough" for now.
 
 ##Things that are currently pissing me off:
-* No Quora icon on my website. 
- * This is because FontAwesome doesn't have a Quora icon (What gives?).
 * CSS formatting is difficult, especially when you mix absolute & fixed positions.
+ * I should probably go back and remove the hacks in some areas - I over-indexed on a ton of CSS that I haven't used that much yet.
 * With the architecture / design / layout of this site, it is difficult to add logos to a standard navbar row (or column) to make them more easily accessible.
  * It's also difficult to line them up properly with their relevant experience without completely rewriting the entire CSS or changing the design of the layout.
 
 ##Changelog:
+
+###September 12, 2017
+* Added new background photos for the landing page and the quotes are (since I finally started using my phone camera more).
+* Introduced "Bootstrap", which came with other goodies like a photo carousel
+* Created a photo carousel, which should be "not terrible" but this is draft 1 for that... so yeah.
+ * Added a bunch of photos (7 total, including the original background/header photo)
+* Fixed content on index.html regarding hobbies and overall "about" section.
+* Updated the FontAwesome library to 4.7, since a new one is available.
+ * Hey look, they finally added Quora!
 
 ###October 25, 2016
 * Added logos for AGF, Blue Coat, Datalot, Riot Games, Audible, and Amazon, as well as the ability to click on them to scroll to their respective regions.

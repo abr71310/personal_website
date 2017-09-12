@@ -215,7 +215,6 @@ ul#nav li a {
 ul#nav li a:active { background-color: transparent !important; }
 ul#nav li.current a { color: #F06000; }
 
-
 /* ------------------------------------------------------------------ */
 /* c. About Section
 /* ------------------------------------------------------------------ */
@@ -264,9 +263,13 @@ ul#nav li.current a { color: #F06000; }
 	font-size: 20px;
 }
 
+/* ------------------------------------------------------------------ */
+/* d. Carousel Section
+/* ------------------------------------------------------------------ */
+
 
 /* ------------------------------------------------------------------ */
-/* d. Resume Section
+/* e. Resume Section
 /* ------------------------------------------------------------------ */
 
 #resume {
@@ -371,7 +374,7 @@ ul#nav li.current a { color: #F06000; }
 }
 
 .javascript {
-  	width: 70%;
+  	width: 80%;
   	-moz-animation: javascript 2s ease;
   	-webkit-animation: javascript 2s ease;
 }
@@ -381,7 +384,7 @@ ul#nav li.current a { color: #F06000; }
   	-webkit-animation: node 2s ease;
 }
 .java {
-  	width: 90%;
+  	width: 95%;
   	-moz-animation: java 2s ease;
   	-webkit-animation: java 2s ease;
 }
@@ -391,7 +394,7 @@ ul#nav li.current a { color: #F06000; }
   	-webkit-animation: cplusplus 2s ease;
 }
 .css {
-  	width: 50%;
+  	width: 60%;
   	-moz-animation: css 2s ease;
   	-webkit-animation: css 2s ease;
 }
@@ -401,7 +404,7 @@ ul#nav li.current a { color: #F06000; }
   	-webkit-animation: php 2s ease;
 }
 .html5 {
-  	width: 70%;
+  	width: 75%;
   	-moz-animation: html5 2s ease;
   	-webkit-animation: html5 2s ease;
 }
@@ -491,7 +494,7 @@ ul#nav li.current a { color: #F06000; }
 }
 
 /* ------------------------------------------------------------------ */
-/* e. Portfolio Section - NOT IN USE CURRENTLY
+/* f. Portfolio Section - NOT IN USE CURRENTLY
 /* ------------------------------------------------------------------ */
 #portfolio {
 	background: #ebeeee;
@@ -659,7 +662,7 @@ ul#nav li.current a { color: #F06000; }
 }
 
 /* ------------------------------------------------------------------
-/* f. Quotes
+/* g. Quotes
 /* ------------------------------------------------------------------ */
 
 #quotes {
@@ -806,7 +809,7 @@ ul#nav li.current a { color: #F06000; }
 }
 
 /* ------------------------------------------------------------------ */
-/* g. Contact Section
+/* h. Contact Section
 /* ------------------------------------------------------------------ */
 
 #contact {
@@ -944,7 +947,7 @@ ul#nav li.current a { color: #F06000; }
 }
 
 /* ------------------------------------------------------------------ */
-/* h. Footer
+/* i. Footer
 /* ------------------------------------------------------------------ */
 
 footer {

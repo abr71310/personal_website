@@ -14,6 +14,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
    <!-- CSS and JS stuff -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
    <link rel="stylesheet" href="css/default.css">
    <link rel="stylesheet" href="css/layout.css">
    <link rel="stylesheet" href="css/media-queries.css">
@@ -32,6 +33,7 @@
 			<ul id="nav" class="nav">
 				<li class="current"><a class="smoothscroll" href="#home">Home</a></li>
 				<li><a class="smoothscroll" href="#about">About</a></li>
+				<li><a class="smoothscroll" href="#carousel">Photos</a></li>
 				<li><a class="smoothscroll" href="#resume">Resume</a></li>
 				<li><a class="smoothscroll" href="#quotes">Quotes</a></li>
 				<li><a class="smoothscroll" href="#contact">Contact</a></li>
@@ -56,7 +58,7 @@
 					<li><a href="https://github.com/mslshao"><i class="fa fa-github"></i></a></li>
 					<li><a href="http://angel.co/mshao"><i class="fa fa-angellist"></i></a></li>
 					<li><a href="http://reddit.com/u/riotshao"><i class="fa fa-reddit-square"></i></a></li>
-					<li><a href="http://www.quora.com/Michael-Shao-6"><i class="fa fa-fw quora">Q</i></a></li>
+					<li><a href="http://www.quora.com/Michael-Shao-6"><i class="fa fa-quora"></i></a></li>
 					<li><a href="http://mshao.yelp.ca"><i class="fa fa-yelp"></i></a></li>
 					<li><a href="http://blog.michaelshao.com"><i class="fa fa-wordpress"></i></a></li>
 					<li><a href="http://www.youtube.com/user/chairmanshao"><i class="fa fa-youtube-play"></i></a></li>
@@ -92,9 +94,9 @@
 					<br>
 					I used to trade equities in capital markets regularly. My portfolio wasn't amazing; I ended up breaking even after all commissions and fees were settled, despite my relative inexperience with trading. I'm interested in Bitcoin; I have been since it came out. I even invested some money in it before it tanked below $300 USD. Maybe I'll jump back in one day to more shenanigans, but right now, I'll just watch. 
 					<br>
-					I am starting to blog more often. I most recently (April 22) wrote a post about entrepreneurship, and my first foray into the space. Feel free to check it out on <a href='http://blog.michaelshao.com'><u>my blog</u></a> (hosted on WordPress). I'll find a way to build a blog on this website later - I made the WP blog way before this iteration of the website was even conceived, and my lack of foresight for the integration created some interesting challenges.
+					I am starting to blog more often. I most recently (January 2017) wrote a post about transitioning from classroom learning to "workplace learning". Feel free to check it out on <a href='http://blog.michaelshao.com'><u>my blog</u></a> (hosted on WordPress). I'll find a way to build a blog on this website later - I made the WP blog way before this iteration of the website was even conceived, and my lack of foresight for the integration created some interesting challenges.
 					<br>
-					I like photography; both looking at pictures and taking them. I took the photo which is featured as the background the top of the page, as well as the background photo in the quotes section. The landing area photo is a view of Lake Minnewanka near Banff, and the Quotes background photo is Moraine Lake (in Banff National Park). When I get a better camera, I'll have a gallery on this page.<br>
+					I like photography; I took all of the photos that are featured on this website, such as the header photo, and the background photo in the quotes section. The carousel includes photos such as the view of Lake Minnewanka near Banff, Moraine Lake (in Banff National Park), Zion National Park, and more. When I acquire a better camera, I'll expand a gallery on this page.<br>
 					<br>
 					I've been on TV before; specifically <a href="http://www.pbs.org/newshour/bb/rubiks-cubes-mystique-remains-40-years-later/">PBS Newshour</a>. As you can tell, I love <a href="https://www.worldcubeassociation.org/results/p.php?i=2009SHAO02">cubing</a>.
 				</p>
@@ -128,7 +130,87 @@
 			</a>
 		</p> <!-- hmm, there's a bug with this on mobile -->
 	</section> <!-- About Section End-->
-
+	<section id="carousel"> <!-- Carousel Section Start -->
+      <div id="myCarousel" class="carousel slides" data-ride="carousel">
+		  <!-- Indicators -->
+          <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+              <li data-target="#myCarousel" data-slide-to="4"></li>
+              <li data-target="#myCarousel" data-slide-to="5"></li>
+              <li data-target="#myCarousel" data-slide-to="6"></li>
+          </ol>
+        
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+              <div class="item active">
+			      <img src="images/zion-national-park.jpg" alt="Zion National Park">
+                  <div class="carousel-caption">
+				      <h2 style="color:white;margin-bottom:3%">Zion National Park</h2>
+                  </div>
+              </div>
+        
+	          <div class="item">
+	              <img src="images/hoover-dam.jpg" alt="Hoover Dam">
+	              <div class="carousel-caption">
+					  <h2 style="color:white;margin-bottom:3%">Hoover Dam</h2>
+	              </div>
+	          </div>
+	        
+	          <div class="item">
+	              <img src="images/red-rock.jpg" alt="Red Rock Canyon National Conservation Area">
+	              <div class="carousel-caption">
+					  <h2 style="color:white;">Red Rock Canyon</h2>
+					  <p style="margin-bottom:3%;">Keystone Thrust Trail had the best views!</p>
+	              </div>
+	          </div>
+	          
+	          <div class="item">
+	              <img src="images/lake-minnewanka.jpg" alt="Lake Minnewanka in Banff National Park">
+	              <div class="carousel-caption">
+					  <h2 style="color:white;">Lake Minnewanka</h2>
+					  <p style="margin-bottom:3%;">Boating in Banff National Park</p>
+	              </div>
+	          </div>
+	          
+	          <div class="item">
+	              <img src="images/moraine-lake.jpg" alt="Moraine Lake in Banff National Park">
+	              <div class="carousel-caption">
+					  <h2 style="color:white;">Moraine Lake</h2>
+					  <p style="margin-bottom:3%;">Banff National Park in the summertime is awe-inspiring!</p>
+	              </div>
+	          </div>
+	          
+	          <div class="item">
+	              <img src="images/rainier.jpg" alt="Mount Rainier">
+	              <div class="carousel-caption">
+					  <h2 style="color:white;">Mount Rainier</h2>
+					  <p style="margin-bottom:3%;">The junction near the peak of the trail.</p>
+	              </div>
+	          </div>
+	          
+	          <div class="item">
+	              <img src="images/mount-hood.jpg" alt="Mount Hood">
+	              <div class="carousel-caption">
+					  <h2 style="color:white;">Mount Hood</h2>
+					  <p style="margin-bottom:3%;">Just outside of Hood River, Oregon, there's a beautiful outlook of the mountain.</p>
+	              </div>
+	          </div>
+	      </div>
+        
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+          </a>
+	  </div>
+	</section> <!-- Carousel Section End -->
 	<!-- Resume Section ================================================== -->
 	<section id="resume">
 		<!-- Education ----------------------------------------------- -->
@@ -159,7 +241,6 @@
 				</div> <!-- Master's, eventually -->
 			</div> <!-- main-col end -->
 		</div> <!-- End Education -->
-
 		<!-- Work ----------------------------------------------- -->
 		<div class="row work">
 			<div class="three columns header-col">
@@ -179,7 +260,7 @@
 						<h3><a href="https://smile.amazon.com">Amazon.com</a></h3>
 						<p class="info">Software Development Engineer<span>&bull;</span> <em class="date">June 2015 &raquo; Present</em></p>
 						<p>
-							I joined the Seller Services, Marketplace, Fulfillment Technologies team. Our team is responsible for vending shipping labels to third-party merchants from shipping carriers like FedEx and UPS.
+							I joined the Seller Services, Marketplace, Fulfillment Technologies team. Our team is responsible for building and maintaining the platform that vends shipping labels to third-party merchants that sell on Amazon Seller Central, from shipping carrier services such as FedEx, UPS, DHL, and Canada Post.
 						</p>
 					</div>
 				</div> <!-- end work experience current -->
@@ -398,7 +479,6 @@
          </div> <!-- row ends -->
        </div>  <!-- text-container ends -->
    </section> <!-- Testimonials Section End-->
-
    <!-- Contact Section ================================================== -->
 	<section id="contact">
 		<div class="row section-head">
@@ -486,7 +566,7 @@
 					<li><a href="https://github.com/mslshao"><i class="fa fa-github"></i></a></li>
 					<li><a href="http://angel.co/mshao"><i class="fa fa-angellist"></i></a></li>
 					<li><a href="http://reddit.com/u/riotshao"><i class="fa fa-reddit"></i></a></li>
-					<li><a href="http://www.quora.com/Michael-Shao-6"><i class="fa fa-fw quora">Q</i></a></li>
+					<li><a href="http://www.quora.com/Michael-Shao-6"><i class="fa fa-quora"></i></a></li>
 					<li><a href="http://mshao.yelp.ca"><i class="fa fa-yelp"></i></a></li>
 					<li><a href="http://blog.michaelshao.com"><i class="fa fa-wordpress"></i></a></li>
 					<li><a href="http://www.youtube.com/user/chairmanshao"><i class="fa fa-youtube-square"></i></a></li>
@@ -502,15 +582,16 @@
 	</footer> <!-- Footer End-->
 
 	<!-- JavaScript add-ons ================================================== -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-1.12.4.min.js"><\/script>')</script>
 	<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
 	<script src='https://www.google.com/recaptcha/api.js'></script>
-
 	<script src="js/jquery.flexslider.js"></script>
 	<script src="js/waypoints.js"></script>
 	<script src="js/jquery.fittext.js"></script>
 	<script src="js/magnific-popup.js"></script>
 	<script src="js/init.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
